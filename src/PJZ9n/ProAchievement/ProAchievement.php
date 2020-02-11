@@ -28,6 +28,23 @@ use pocketmine\plugin\PluginBase;
 class ProAchievement extends PluginBase
 {
     
-    //
+    /** @var string */
+    private static $composerAutoloaderPath = null;
+    
+    /**
+     * @return string
+     */
+    public static function getComposerAutoloaderPath(): string
+    {
+        if (self::$composerAutoloaderPath === null) {
+            self::$composerAutoloaderPath = __DIR__ . "/../../../vendor/autoload.php";
+        }
+        return self::$composerAutoloaderPath;
+    }
+    
+    public function onLoad(): void
+    {
+        require_once self::getComposerAutoloaderPath();
+    }
     
 }
