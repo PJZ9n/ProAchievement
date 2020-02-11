@@ -1,0 +1,8 @@
+{
+  "name": "pjz9n/pro-achievement",
+  "type": "project",
+  "require": {
+    "particle/validator": "^2.3"
+  },
+  "license": "GPL-v3"
+}
