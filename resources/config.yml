@@ -1,0 +1,6 @@
+---
+//config-verion: configfile.comment.config-version
+config-version: 1
+//lang: configfile.comment.lang
+lang: default
+...
